@@ -17,7 +17,7 @@ public class HelloWorld {
         ApplicationContext ctx =
                 new AnnotationConfigApplicationContext( GreeterConfig.class );
 
-        Greeter greeter = ctx.getBean( Greeter.class );
+        Greeter greeter = ctx.getBean( Greeter2.class );
         System.out.println( greeter.sayHello() );
     }
 }

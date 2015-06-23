@@ -10,8 +10,14 @@ import org.springframework.context.annotation.Configuration;
 public class GreeterConfig
 {
     @Bean
-    public Greeter greeter()
+    public Greeter greeter1()
     {
         return new Greeter1();
+    }
+
+    @Bean
+    public Greeter greeter2()
+    {
+        return new Greeter2();
     }
 }
